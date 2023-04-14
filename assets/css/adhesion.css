@@ -1,0 +1,32 @@
+.valider {
+    color: orange;
+    font-weight: bold;
+    padding: 2%;
+    border: solid 1px darkturquoise;
+    border-radius: 6px;
+}
+
+.valider:hover {
+    background-color: darkturquoise;
+    color: #FFF;
+}
+
+#adh form {
+    margin-bottom: 10%;
+}
+
+#adh {
+    margin-left: 25%;
+}
+
+.form-group label, .form-group input {
+    width: 50%;
+}
+
+/* média queries menu*/
+@media all and (max-width: 1024px) {
+    #adh h2 {
+        font-size: 20px;
+    }
+}
+  

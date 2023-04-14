@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      max-width: 100vw;
+      overflow: hidden;
+    }
+    div {
+      box-sizing: border-box;
+      background-color: chartreuse;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+  </style>
+  <body>
+    <div style="top: 400px; left: 500px;"></div>
+
+    <script>
+      (function () {
+        var element = document.querySelector("div");
+        var larEcran = window.innerWidth;
+        var hauEcran = window.innerHeight;
+        var largB = 100;
+        var hautB = 100;
+        var depX = 10;
+        var depY = 5;
+        var intervalID;
+        intervalID = window.setInterval(function () {
+          var gauch = parseFloat(element.style.left);
+          var droit = gauch + largB; // 100 = large box
+          var haut = parseFloat(element.style.top);
+          var bas = haut + hautB; // 100 = hauteur box
+          if (gauch + depX <= 0 || droit + depX >= larEcran) {
+            depX = -depX;
+          } else if (haut + depY <= 0 || bas + depY >= hauEcran) {
+            depY = -depY;
+          } else {
+            element.style.left = gauch + depX + "px";
+            element.style.top = haut + depY + "px";
+          }
+        }, 100);
+      })();
+    </script>
+  </body>
+</html>

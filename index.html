@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/evenement.css" />
+    <link rel="stylesheet" href="./assets/css/projet.css" />
+    <link rel="stylesheet" href="./assets/css/adhesion.css" />
+    <link rel="stylesheet" href="./assets/css/apropos.css" />
+    <script src="./vendors/jquery/jquery.js"></script>
+    <title>Steve Kounga Dévellopeur full stack js</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example">
+    <!-- menu de navigation -->
+
+    <!-- menu de navigation -->
+
+    <nav
+      class="navbar navbar-expand-md  navbar-dark bg-dark fixed-top welcome"
+    >
+      <a class="navbar-brand accueil" href="#welcome">
+        <img src="assets/images/amir-fb.png" alt="logo amir">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav menu">
+          <li class="nav-item">
+            <a class="nav-link profJs" href="#Profil">Evénements </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link expJs" href="#Experiences">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link capJs" href="#Capacites">Adhérer</a>
+          </li>
+          <li class="nav-item Projets">
+            <a class="nav-link projJs" href="#Projets" id="dropdown01">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contJs" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      
+    </nav>
+
+    <header >
+      <div class="wrapper">
+        <div id="welcome" class="content">
+          <form name = "form1">
+            <div align = "center">
+              <input type="text" name = "deftext" size=76> 
+            </div>
+          </form >
+          <h1>Akwaba</h1>
+        </div>
+        <button type="button" class="btn btn-info">
+          <div id="Profil" class="arrow-down"></div>
+        </button>
+      </div>
+    </header>
+
+
+    <div class="btnScroll">  
+      <section>
+        <div  class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="Profil-center">
+                <h1 >Evènements</h1>
+                <p>
+                  "Les petites émotions sont les grands capitaines de nos vies" <br/> - Vincent Van Gogh
+                </p>
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div class="row midle-pro">
+
+            <section class="carousel" aria-label="carousel" Tabindex="0">
+              <a class="carousel__skip-link" href="#skip-link">Carousel überspringen</a>
+              <div class="slides">
+                <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0"></div>
+                <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"></div>
+                <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"></div>
+                <div class="slides-item slide-4" id="slide-4" aria-label="slide 4 of 5" tabindex="0"></div>
+                <div class="slides-item slide-5" id="slide-5" aria-label="slide 5 of 5" tabindex="0"></div>       
+              </div>
+              <div class="carousel__nav">
+                <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1">1</a>
+                <a class="slider-nav" href="#slide-2" aria-label="Go to slide 2">2</a>
+                <a class="slider-nav" href="#slide-3" aria-label="Go to slide 3">3</a>
+                <a class="slider-nav" href="#slide-4" aria-label="Go to slide 4">4</a>
+                <a class="slider-nav" href="#slide-5" aria-label="Go to slide 5">5</a>
+              </div>
+              
+            </section>
+            
+          </div>
+        </div> 
+        <div id="Experiences"></div>
+      </section>
+    </div>
+     
+    
+   <div id="pageE">   
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="Profil-center">
+              <h1 >Projets</h1>
+              <p>
+                "Vous pouvez faire tout ce que vous voulez si vous y croyez." <br/> - Benjamin Franklin
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5">
+          <div class="col-3 col-md-3 col-lg-4">
+            <div class="card">
+              <div class="card__inner">
+                <div class="card__face card__face--front">
+                  <h2>Projets réalisés</h2>
+                </div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <div class="card__header">
+                      <!-- <img src="pp.jpg" alt="" class="pp" /> -->
+                      <h2>AMIR</h2>
+                    </div>
+                    <div class="card__body">
+                      <h3>Contexte</h3>
+                      <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3 offset-3 col-md-3 offset-md-3 col-lg-4 offset-lg-2">
+            <div class="card">
+              <div class="card__inner">
+                <div class="card__face card__face--front">
+                  <h2>Projets à venir</h2>
+                </div>
+  
+                <div class="card__face card__face--back">
+  
+                  <div class="card__conten">
+  
+                    <div class="card__header">
+                      <!-- <img src="pp.jpg" alt="" class="pp"> -->
+                      <h2>AMIR</h2>
+                    </div>
+  
+                    <div class="card__body">
+                      <h3>Description</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quisquam cupiditate incidunt mollitia temporibus quae ipsam facilis. Saepe odio laboriosam eum aliquid inventore ad quasi ducimus blanditiis dolore doloremque. Fugiat?</p>
+                    </div>
+  
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="Capacites"></div>
+    </section>
+   </div>
+  
+    <div id="pageP" >
+        <div class="container">
+          <div  class="row">
+            <div class="col-12 Profil-center">
+              <h1>Adhérer</h1>
+              <p>
+                "Je crois à l'unité, à la persistance, à la logique, à l'adhésion d'hier avec demain." <br/>
+                - Victor Hugo 
+              </p>
+              <hr>
+            </div>
+          </div>
+          <div class="row projs">
+            <div class="col-12 col-lg-4 offset-lg-1 proAJs">
+              <figure class="anim1">
+                <img src="./assets/images/cacao.png" alt="premier projet html"/>
+                <figcaption>
+                  <h3>Pour qui ?</h3>
+                  <p> Ivoiriens et sympathisans.</p>
+                  <p><strong>Tags:</strong> <br />Solidarité, Partage, Inclusion, Culture</p>
+                  <a href="https://www.facebook.com/AmirRennes">"https://www.facebook.com/AmirRennes"</a>
+                  
+                </figcaption>
+
+              </figure>
+                            
+            </div>
+            <div class="col-12 col-lg-4 offset-lg-2 proBJs">
+
+              <figure class="anim2">
+                <img src="./assets/images/team.png" alt="premier projet front-end"/>
+                <figcaption>
+                  <h3>Comment ?</h3>
+                  <p>Par ce site ou via faceboock.</p>
+                  <p><strong>Tags:</strong> <br />Discussions, Partenariat, Sport </p>
+                  <a href="https://www.facebook.com/AmirRennes">"https://www.facebook.com/AmirRennes"</a>
+                  
+                </figcaption>
+
+              </figure>
+              
+            </div>
+          </div>
+          <br> <br>
+
+          <!-- <div class="row">
+            <div class="col-12">
+              <hr>
+            </div>
+          </div> -->
+          <div class="row">
+            <div id="adh" class="col-12">
+              <h2>Formulaire d'adhésion</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="adh" class="col-12">
+              <form method="post">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">votre adresse email restera confidentielle.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Telephone</label>
+                  <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="phoneHelp" placeholder="Enter phone number">
+                </div>
+                <input class="valider" type="button" value="Adhérer !" onclick="sendEmail()"/>
+              </form>  
+
+            </div>
+          </div>
+          </div>
+          <div id="Projets"></div>
+        </div>
+      </div>
+
+
+
+    <div id="pageE"> 
+      <section>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 Profil-center">
+              <h1>A propos</h1>
+              <p>"Everyday UBUNTU !" <br/>
+                - Mungi Ngomane 
+              </p>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iste quae rerum sunt quisquam error mollitia quaerat cumque modi saepe. Doloribus recusandae sed officiis assumenda totam at, ullam aliquid dolores!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quia laborum ad tenetur ipsa laudantium aspernatur quam. Voluptatem provident laudantium nihil facilis, ex, atque corporis sint illum laboriosam quidem labore.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut non accusamus adipisci repellat! At excepturi iste praesentium sit, fugiat error rerum in explicabo fugit impedit. Sequi numquam libero fugit voluptatibus.
+            </p>
+          </div>
+          <!-- <div class=" row">
+            <div class="doc4">
+              <h2 id="LIA">Strong, Team spirit & Friendship</h2>
+              <p>
+                <img
+                  src="assets/images/amir-fb.png"
+                  class="img5"
+                  alt="tof amir"
+                />
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laboriosam maiores pariatur quis omnis, atque ratione maxime perspiciatis soluta sapiente quae possimus modi, inventore facilis? Ratione deserunt architecto maiores optio?
+              </p>
+            </div>
+          </div> -->
+          <div id="Contact"></div>
+        </div>
+      </section>
+    </div>
+
+
+    <div id="PageC">
+      <section >
+        <div class="container">
+          <div class="row Contact">
+            <div class="col-12">
+              <h1 id="last">Contact</h1>
+              <p>
+                “Il n'y a pas de hasards, il n'y a que des rendez-vous.” <br/>
+                -Paul Eluard
+              </p>
+              <hr class=>
+            </div>
+          </div>
+          <div class="row Contact">
+            <div class="col-12 col-lg-6">
+              <span class=" cont">☎  </span>  <span>06.34.01.16.50</span>
+            </div>
+            <div class="col-12 col-lg-6">
+              <span class=" cont">@ </span> <span><a id="lien" href="mailto:votrenom@bidule.com">stevefranck.kounga@gmail.com</a></span>
+            </div>
+          </div>
+          <div class="row Contact">
+            <div class="col-12 col-lg-6">
+              <span> <a id="lien"  href="https://www.linkedin.com/in/steve-kounga/"><img src="./assets/images/facbook.png" alt="logo facebook">   https://www.facebook.com/AmirRennes</a> </span>
+            </div>
+            <div class="col-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <hr>
+            </div>
+          <div class="row">
+            <div class="col-12">
+              <span class="rating">
+                <a href="#5" title="Donner 5 étoiles">☆</a>
+                <a href="#4" title="Donner 4 étoiles">☆</a>
+                <a href="#3" title="Donner 3 étoiles">☆</a>
+                <a href="#2" title="Donner 2 étoiles">☆</a>
+                <a href="#1" title="Donner 1 étoile">☆</a>
+              </span>
+              <p class="avis">Votre avis </p>
+              <p>&copy; 2023 AMIR.com by Steve K</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>  
+
+    <!-- <img
+      src="https://img.icon0s8.com/ios-filled/50/000000/down-squared--v1.png"
+    /> -->
+  
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/projet.js"></script>
+    <script src="./vendors/popper/popper.min.js"></script>
+    <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

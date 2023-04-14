@@ -1,0 +1,795 @@
+@font-face {
+  font-family: "BallparkWeiner";
+  src: url("../polices/ballpark.eot");
+  src: url("../polices/ballpark.eot?#iefix") format("embedded-opentype"),
+    url("../polices/ballpark.woff") format("woff"),
+    url("../polices/ballpark.ttf") format("truetype"),
+    url("../polices/ballpark.svg#BallparkWeiner") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dayrom";
+  src: url("../polices/dayrom.eot");
+  src: url("../polices/dayrom.eot?#iefix") format("embedded-opentype"),
+    url("../polices/dayrom.woff") format("woff"),
+    url("../polices/dayrom.ttf") format("truetype"),
+    url("../polices/dayrom.svg#Dayrom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html,
+header,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html,
+header {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background: url("../images/basilic-ivoiro.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 1px 1px 10px black;
+}
+
+.wrapper input{  
+  background-color: 	rgba(0, 0, 0, 0);
+  border: solid 1px transparent;
+  /* color: orange; */
+  color: darkorchid;
+  font-weight: bold;
+  margin-top: 170px;
+  margin-left: 100px;
+  padding-left: 25px;
+}
+
+.wrapper h1 {
+  margin-right: 30px;
+}
+ 
+@media all and (max-width: 1024px){
+  .wrapper input{
+  background-color: 	rgba(0, 0, 0, 0);
+  border: solid 1px transparent;
+  /* color: orange; */
+  color: darkorchid;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 250px;
+  
+  }
+  
+}
+
+h1,
+h2 {
+  font-size: 75 "Trebuchet MS ", arial, serif;
+}
+section h1 {
+  color: darkturquoise;
+}
+section h2 {
+  color: darkturquoise;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+.subtitle {
+  font-size: 1.7em;
+  font-family: "Trebuchet MS ", arial, serif;
+}
+/* fleche sous forme de triangle (arrow)*/
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 30px solid orange;
+  position: absolute;
+  right: 28px;
+  bottom: 5px;
+}
+
+@media all and (max-width: 1024px) {
+  .arrow-down {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid orange;
+    position: absolute;
+    right: 24px;
+  }
+}
+/*annimation fleche bas */
+
+/* Fleche de defilement vers le bas bouge */
+
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.arrow-down {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.btn {
+  background-color: black;
+  height: 80px;
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  right: 150px;
+  border-radius: 4px 4px 0 0;
+}
+
+@media all and (max-width: 1024px) {
+  .btn {
+    height: 50px;
+    width: 70px;
+    position: absolute;
+    right: 30px;
+  }
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.navbar-nav {
+  background-color: darkorchid;
+}
+.navbar-nav > li {
+  height: 60px;
+  width: 100px;
+}
+
+.navbar-nav > li a {
+  height: 60px;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: 600px;
+  color: #ffffff;
+}
+
+@media all and (max-width: 1024px){
+   .navbar-nav > li a {
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 400px;
+    color: #ffffff;
+   }
+
+   .navbar-nav > li {
+    height: 30px;
+    width: 100px;
+  }
+}
+
+.navbar-nav > li a:hover,
+.navbar-nav > li a:focus {
+  background-color: #22a39f;
+}
+
+.menu.scrolling {
+  background-color: orange;
+}
+
+section {
+  max-width: 800px;
+  margin: 80px auto;
+}
+.profil-center,
+h1,
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+.midle-pro h2,
+p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.midle-pro img {
+  border: solid 15px beige;
+  margin-top: 30px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+}
+
+@media all and (max-width: 1024px){
+  .midle-pro img{
+    margin: auto;
+  }
+}
+
+#pageE {
+  background-color: honeydew;
+  overflow: hidden;
+}
+#Capa ul > li {
+  min-height: 30px;
+  padding: 3px 0px;
+}
+#Capa ul > li:hover {
+  background: #f2f2f2;
+}
+#Capa ul > li .cap-titre {
+  display: inline-block;
+  width: 60%;
+}
+#Capa ul > li .cap-score {
+  float: right;
+}
+#Capa ul > li .cap-score .note {
+  color: #dfe0e0;
+  font-size: 20px;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#Capa ul > li .cap-score .note.filled {
+  color: #22a39f;
+}
+
+#Capa ul > li:hover .cap-score .note {
+  margin-left: 2px;
+}
+
+.cap {
+  list-style-type: none;
+}
+
+#pageP {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+#pageP h1 {
+  margin-top: 100px;
+}
+
+
+.proAJs img {
+  margin-top: 25px;
+}
+.proBJs img {
+  margin-top: 25px;
+}
+
+.proAjs1 img {
+  margin-top: 25px;
+}
+.proBjs1 img {
+  margin-top: 25px;
+}
+
+.proAJs figure figcaption {
+  background-color: #22a39f;
+  opacity: 0;
+  color: #fff;
+  padding: 20px 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.proBJs figure figcaption {
+  background-color: #22a39f;
+  opacity: 0;
+  color: #fff;
+  padding: 20px 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.proAJs1 figure figcaption {
+  background-color: #22a39f;
+  opacity: 0;
+  color: #fff;
+  padding: 20px 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.proBJs1 figure figcaption {
+  background-color: #22a39f;
+  opacity: 0;
+  color: #fff;
+  padding: 20px 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.proAJs figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.proBJs figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.proAjs1 figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.proBjs1 figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+figure.anim1 figcaption {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+figure.anim2 figcaption {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+figure.anim3 figcaption {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+figure.anim4 figcaption {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.anim1 img {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+figure.anim2 img {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+figure.anim3 img {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+figure.anim4 img {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.anim1:hover figcaption {
+  opacity: 0.6;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim2:hover figcaption {
+  opacity: 0.6;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim3:hover figcaption {
+  opacity: 0.6;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim4:hover figcaption {
+  opacity: 0.6;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.anim1:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim2:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim3:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim4:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.anim1 figcaption {
+  text-align: left;
+}
+figure.anim2 figcaption {
+  text-align: left;
+}
+figure.anim3 figcaption {
+  text-align: left;
+}
+figure.anim4 figcaption {
+  text-align: left;
+}
+
+figure.anim1 h3 {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+figure.anim2 h3 {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+figure.anim3 h3 {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+figure.anim4 h3 {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.anim1:hover h3 {
+  opacity: 1;
+}
+figure.anim2:hover h3 {
+  opacity: 1;
+}
+figure.anim3:hover h3 {
+  opacity: 1;
+}
+figure.anim4:hover h3 {
+  opacity: 1;
+}
+
+figure.anim1 h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+figure.anim2 h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+figure.anim3 h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+figure.anim4 h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+figure.anim1:hover h3::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim2:hover h3::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim3:hover h3::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim4:hover h3::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.anim1 p {
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+figure.anim2 p {
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+figure.anim3 p {
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+figure.anim4 p {
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+figure.anim1:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim2:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim3:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.anim4:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#PageC {
+  background-color: slategrey;
+  color: #fff;
+  overflow: hidden;
+}
+#last {
+  color: #fff;
+}
+.contact,
+.cont {
+  color: gold;
+  font-size: 2em;
+}
+#lien {
+  color: #fff;
+}
+#lien img {
+  height: 30%;
+}
+
+.rating {
+  margin-left: 300px;
+}
+.avis {
+  margin-left: 300px;
+  color: gold;
+}
+
+.rating a {
+  float: right;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 3em;
+  transition: color 0.4s;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+  color: orange;
+  cursor: pointer;
+}
+
+/* média queries menu*/
+@media all and (max-width: 1024px) {
+  .rating {
+    margin-left: 120px;
+  }
+  .rating a {
+    font-size: 2em;
+  }
+  .avis {
+    margin-left: 120px;
+  }
+}
+
+/*.proJs.scrolling {
+  background-color: #22a39f;
+}
+.expJs.scrolling {
+  background-color: #22a39f;
+}*/
+
+
+
