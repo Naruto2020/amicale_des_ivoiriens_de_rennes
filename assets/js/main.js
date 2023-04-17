@@ -12,7 +12,7 @@ var $ContJs = $(".contJs");
 var $LienP5 = $("#Contact");
 var $Section = $("section");
 var $Menu = $(".navbar-nav");
-var speed = 650; // Durée de l'animation (en ms)
+var speed = 640; // Durée de l'animation (en ms)
 
 // deplacement animé des ancres
 var ancres = function () {
