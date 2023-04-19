@@ -188,13 +188,14 @@ section h2 {
 }
 
 .navbar-brand img {
-  width: 80px;
-  height: 80px;
-  border-radius: 80px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
 }
 
 .navbar-nav {
   background-color: darkorchid;
+  /* background-color: #CC99CC; */
 }
 .navbar-nav > li {
   height: 60px;
